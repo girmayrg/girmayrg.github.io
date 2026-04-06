@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FootHeals INC | Professional Mobile Foot Care</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .section img.float-right {
+        float: right;
+        margin: 0 0 20px 30px; /* space around image */
+        max-width: 350px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Ensure proper clearing of floats after section */
+      .section::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      /* Optional: make text slightly bigger for readability */
+      .section p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .section img.float-right {
+          float: none;
+          display: block;
+          margin: 0 auto 20px auto;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img
+            src="PPHOTO-2026-04-05-10-52-01.JPG"
+            alt="FootHeals INC Logo"
+            class="logo"
+          />
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">Our Commitment</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Professional Mobile Foot Care</h1>
+        <p>Your feet carry you through life. Let us help you care for them.</p>
+        <a href="contact.html" class="btn">
+          Book an Appointment: 403-605-3680
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Why Choose FootHeals INC?</h2>
+
+        <!-- Floating image -->
+        <img
+          src="foot-care.jpg"
+          alt="Professional foot care being provided by a healthcare worker"
+          class="float-right"
+        />
+
+        <p>
+          We are committed to delivering professional, compassionate mobile foot
+          care services designed to support your comfort, mobility, and overall
+          health.
+        </p>
+
+        <br />
+        <hr />
+        <br />
+
+        <h2>Convenience</h2>
+        <p>
+          Care provided in the comfort and privacy of your own home — no travel
+          required.
+        </p>
+
+        <br />
+        <hr />
+        <br />
+
+        <h2>Expertise</h2>
+        <p>
+          Certified Advanced Foot Care Nurse delivering safe, professional
+          treatment tailored to your needs.
+        </p>
+
+        <br />
+        <hr />
+        <br />
+
+        <h2>Personalized & Compassionate Care</h2>
+        <p>
+          Individualized treatment plans with respectful service for clients of
+          all ages.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Serving Calgary, Airdrie, Chestermere & Okotoks | 403-605-3680</p>
+    </footer>
+  </body>
+</html>
