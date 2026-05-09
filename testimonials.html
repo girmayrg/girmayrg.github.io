@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials | FootHeals INC</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* PAGE HEADER */
+      .page-header {
+        text-align: center;
+        padding: 40px 20px 10px;
+      }
+
+      .page-header h1 {
+        font-size: 2.3rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .page-header p {
+        max-width: 700px;
+        margin: auto;
+        color: #555;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      /* FORM */
+      .testimonial-form-wrapper {
+        padding-top: 20px;
+      }
+
+      .testimonial-form {
+        background: white;
+        padding: 40px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .testimonial-form h2 {
+        margin-bottom: 20px;
+        color: #2c3e50;
+      }
+
+      .testimonial-form form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .testimonial-form input,
+      .testimonial-form textarea {
+        padding: 15px;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        border: 1px solid #dcdcdc;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .testimonial-form input:focus,
+      .testimonial-form textarea:focus {
+        outline: none;
+        border-color: #16a085;
+        box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.15);
+      }
+
+      .btn-submit {
+        padding: 15px;
+        background: #16a085;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn-submit:hover {
+        background: #2c3e50;
+        transform: translateY(-2px);
+      }
+
+      /* TESTIMONIALS */
+      .testimonial-section {
+        padding: 70px 0;
+        overflow: hidden;
+      }
+
+      .testimonial-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .testimonial-title h2 {
+        font-size: 2rem;
+        color: #2c3e50;
+      }
+
+      /* AUTO SCROLL */
+      .scroll-wrapper {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .scroll-track {
+        display: flex;
+        width: max-content;
+        animation: scrollTestimonials 14s linear infinite;
+      }
+
+      .scroll-track:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes scrollTestimonials {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* CARDS */
+      .testimonial-card {
+        width: 340px;
+        background: white;
+        border-radius: 18px;
+        padding: 30px;
+        margin-right: 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+        flex-shrink: 0;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      }
+
+      .stars {
+        color: #f4b400;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+      }
+
+      .testimonial-card p {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #444;
+      }
+
+      .testimonial-card h3 {
+        margin-top: 20px;
+        color: #16a085;
+      }
+      .testimonial-form h2 {
+        margin-bottom: 20px;
+        color: #2c3e50;
+        text-align: center;
+      }
+      .testimonial-form {
+        text-align: center;
+      }
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .page-header h1 {
+          font-size: 2rem;
+        }
+
+        .testimonial-form {
+          padding: 25px;
+        }
+
+        .testimonial-card {
+          width: 280px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img
+            src="PPHOTO-2026-04-05-10-52-01.JPG"
+            alt="FootHeals INC Logo"
+            class="logo"
+          />
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">Our Commitment</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Client Testimonials</h1>
+
+        <p>
+          We are proud to provide compassionate and professional mobile foot
+          care services to clients across Calgary, Airdrie, Chestermere &
+          Okotoks.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section testimonial-form-wrapper">
+      <div class="container">
+        <div class="testimonial-form">
+          <h2>Leave a Testimonial</h2>
+
+          <form action="https://formspree.io/f/mbdwzaar" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+
+            <textarea
+              name="testimonial"
+              rows="5"
+              placeholder="Share your experience with FootHeals INC..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-submit">Submit Testimonial</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="testimonial-title">
+          <h2>What Clients Are Saying</h2>
+        </div>
+
+        <div class="scroll-wrapper">
+          <div class="scroll-track">
+            <!-- CARD 1 -->
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Excellent care and incredibly professional. Having home visits
+                has made life so much easier for our family.”
+              </p>
+
+              <h3>— Sarah M.</h3>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Very knowledgeable and compassionate. I felt comfortable and
+                cared for throughout the entire appointment.”
+              </p>
+
+              <h3>— David R.</h3>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Reliable diabetic foot care from someone who truly understands
+                patient needs. Highly recommended.”
+              </p>
+
+              <h3>— Linda T.</h3>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Professional, punctual, and caring. The convenience of mobile
+                care is absolutely worth it.”
+              </p>
+
+              <h3>— Michael P.</h3>
+            </div>
+
+            <!-- DUPLICATES FOR SMOOTH LOOP -->
+
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Excellent care and incredibly professional. Having home visits
+                has made life so much easier for our family.”
+              </p>
+
+              <h3>— Sarah M.</h3>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Very knowledgeable and compassionate. I felt comfortable and
+                cared for throughout the entire appointment.”
+              </p>
+
+              <h3>— David R.</h3>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Reliable diabetic foot care from someone who truly understands
+                patient needs. Highly recommended.”
+              </p>
+
+              <h3>— Linda T.</h3>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “Professional, punctual, and caring. The convenience of mobile
+                care is absolutely worth it.”
+              </p>
+
+              <h3>— Michael P.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Serving Calgary, Airdrie, Chestermere & Okotoks | 403-605-3680
+    </footer>
+  </body>
+</html>
